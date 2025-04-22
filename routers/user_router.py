@@ -7,9 +7,9 @@ from jose import JWTError, jwt
 from bson import ObjectId
 import os
 from motor.motor_asyncio import AsyncIOMotorClient
-from METAFLOWIA.backend.models.models import UserInDB 
-from METAFLOWIA.backend.schemas.schemas import UserCreate, UserResponse
-from METAFLOWIA.backend.db.database import db, MONGO_DB, users_collection
+from models.models import UserInDB 
+from schemas.schemas import UserCreate, UserResponse
+from db.database import db, MONGO_DB, users_collection
 from dotenv import load_dotenv
 from pathlib import Path
 from typing import List

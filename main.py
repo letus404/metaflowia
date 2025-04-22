@@ -4,8 +4,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from passlib.context import CryptContext
 
-from METAFLOWIA.backend.routers.user_router import user_router, get_password_hash
-from METAFLOWIA.backend.db.database import users_collection
+from routers.user_router import user_router, get_password_hash
+from db.database import users_collection
 
 # --- Configuración de FastAPI ---
 app = FastAPI(
