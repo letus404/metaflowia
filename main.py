@@ -42,9 +42,7 @@ async def on_startup():
 # --- CORS para que el front (por ej. http://localhost:3000) pueda hablar con este API ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://metaflowia-teal-piano.reflex.run",
-        "https://metaflowia.onrender.com",
-        "http://localhost:3000",],  # o ["*"] en dev
+    allow_origins=["*"],  # o ["*"] en dev
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
