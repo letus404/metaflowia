@@ -1,0 +1,45 @@
+# Entorno virtual
+venv/
+.env
+
+# Archivos de configuración del entorno
+*.env
+*.env.*
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.so
+
+# Archivos de logs
+*.log
+
+# Archivos temporales de editores
+*.swp
+*~
+.idea/
+.vscode/
+
+# Archivos de testing / cobertura
+htmlcov/
+.tox/
+.coverage
+coverage.xml
+*.cover
+.cache
+pytest_cache/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos específicos de Render o despliegue (opcional si no querés subirlos)
+build/
+dist/
+
+# node_modules por si tenés frontend separado en el mismo repo
+node_modules/
+
+# Archivos de lock si no los estás usando
+poetry.lock
+Pipfile.lock
