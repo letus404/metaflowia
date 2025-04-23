@@ -56,4 +56,5 @@ app.include_router(user_router, prefix="/users", tags=["users"])
 
 # --- Punto de entrada cuando ejecutás python backend/main.py directamente ---
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    port = int(os.getenv('PORT', 8000))  # Usa el puerto de Render o el puerto por defecto
+    uvicorn.run(app, host="0.0.0.0", port=port)
